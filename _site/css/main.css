@@ -62,6 +62,20 @@ a img {
         color: red;
       }
 
+      h2 {
+        text-align: center;
+      }
+
+      /* Sibling selector that targets the p element
+      that directly follows the h2 element */
+      h2 ~ p {
+        font-size: 0.8em;
+        font-style: italic;
+        margin: 1em auto 0;
+        max-width: 70%;
+        text-align: center;
+      }
+
 
 
 
@@ -71,10 +85,17 @@ a img {
         padding: 5.5vh 60px 0 0;
       }
 
+
       .header-nav > li {
         display: inline-block;
         margin-left: 1em;
       }
+
+      .header-nav > li ~ li {
+        border-left: 1px solid rgba(0, 0, 0, 0.3);
+        padding-left: 1em;
+      }
+
 
       .header-nav a {
         color: #000;
@@ -83,6 +104,28 @@ a img {
         text-decoration: none;
         text-transform: uppercase;
       }
+
+      /* Header Pseudo-classes */
+      .header-nav a:hover, .header-nav a:active {
+        color: #ed6e2f;
+      }
+
+      .header-logo:hover, .header-logo:active {
+        opacity: 0.5;
+      }
+
+      /* Uses Child selector to target
+      only li's that are director children
+      of the .header-nav class */
+      .header-nav > li:first-child a {
+        color: #ed6e2f;
+      }
+
+      .header-nav > li:first-child a:hover {
+        color: #000;
+      }
+
+
 
 
 
