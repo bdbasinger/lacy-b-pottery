@@ -50,8 +50,16 @@ a img {
 
 
       /* GLOBAL STYLES */
+
+      html {
+        /* box-shadow: x-axis y-axis blur size color inset */
+        box-shadow: 0 0 0 30px darkcyan inset;
+        padding: 0 30px;
+      }
+
       body {
         font-family: helvetica, arial, sans-serif;
+        background-color: rgb(152, 194, 193);
       }
       h1 {
         font-size: 7vw;
@@ -79,51 +87,82 @@ a img {
 
 
 
-      /* HEADER STYLES */
-      .header-nav {
-        float: right;
-        padding: 5.5vh 60px 0 0;
+      /* HEADER STYLES
+      darkcyan and bisque*/
+
+      .header {
+        background-color: darkcyan;
+        color: #fff;
+        position: fixed;
+        width: 100%;
+        z-index: 20;
       }
 
+      .header-logo {
+        box-sizing: border-box;
+        display: block;
+        height: 10vh;
+        left: -16px;
+        padding-top: 16px;
+        position: relative;
+        text-align: center;
+        width: 10vh;
+      }
+
+      /* logo's background color upon hovering */
+      .header-logo:hover,
+      .header-logo:active {
+        /*background-color: #ed6e2f;*/
+      }
+
+      .header-logo img {
+        width: 5vh;
+      }
+
+      .header-nav {
+        float: right;
+        padding: 3.5vh 50px 0 0;
+      }
 
       .header-nav > li {
         display: inline-block;
         margin-left: 1em;
       }
 
+      /* divider lines in navigation bar */
       .header-nav > li ~ li {
-        border-left: 1px solid rgba(0, 0, 0, 0.3);
+        border-left: 1px solid rgba(255, 255, 255, 0.3);
         padding-left: 1em;
       }
 
-
       .header-nav a {
-        color: #000;
+        color: #fff;
         font-size: 0.8rem;
         font-weight: bold;
         text-decoration: none;
         text-transform: uppercase;
       }
 
-      /* Header Pseudo-classes */
-      .header-nav a:hover, .header-nav a:active {
-        color: #ed6e2f;
+      /* Navigation link's background upon hovering */
+      .header-nav a:hover,
+      .header-nav a:active {
+        color: #cc9900;
       }
 
-      .header-logo:hover, .header-logo:active {
-        opacity: 0.5;
-      }
-
-      /* Uses Child selector to target
-      only li's that are director children
-      of the .header-nav class */
+      /* Uses Child selector to target only li's that
+      are direct children of the .header-nav class
       .header-nav > li:first-child a {
         color: #ed6e2f;
       }
+      */
 
+      /*
       .header-nav > li:first-child a:hover {
-        color: #000;
+        color: #fff;
       }
+      */
+
+
 
 
 
@@ -218,6 +257,7 @@ a img {
 
 
       /* Throw Away */
+      /*
       .test-box {
         background: SteelBlue;
         margin: 50px;
@@ -229,3 +269,4 @@ a img {
       .test-box-sizing {
         box-sizing: border-box;
       }
+      */
