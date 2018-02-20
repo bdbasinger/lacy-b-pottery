@@ -46,20 +46,27 @@ a img {
 }
 /* END RESET*/
 
+/* lacybpottery.com settings:
+ color of blue text #002E5D
+ color of background #98C2C1
 
+#EDCBC0
+#DB9B88 THE ORIGINAL PINK
+#A47566
+*/
 
 
       /* GLOBAL STYLES */
 
       html {
         /* box-shadow: x-axis y-axis blur size color inset */
-        box-shadow: 0 0 0 30px darkcyan inset;
+        box-shadow: 0 0 0 30px #DB9B88 inset;
         padding: 0 30px;
       }
 
       body {
         font-family: helvetica, arial, sans-serif;
-        background-color: rgb(152, 194, 193);
+        background-color: #98C2C1;
       }
       h1 {
         font-size: 7vw;
@@ -91,7 +98,7 @@ a img {
       darkcyan and bisque*/
 
       .header {
-        background-color: darkcyan;
+        background-color: #DB9B88;
         color: #fff;
         position: fixed;
         width: 100%;
@@ -160,7 +167,7 @@ a img {
       /* Footer Styles */
 
       .footer {
-        background-color: darkcyan;
+        background-color: #DB9B88 ;
         padding: 10vh 0 15vh;
         text-align: center;
       }
@@ -190,14 +197,13 @@ a img {
 
 
 
-      /*
+      /* Deleted
       Uses Child selector to target only li's that
       are direct children of the .header-nav class
 
       .header-nav > li:first-child a {
         color: #ed6e2f;
       }
-
       .header-nav > li:first-child a:hover {
         color: #fff;
       }
@@ -205,10 +211,42 @@ a img {
 
 
 
+
       /* HERO STYLES */
       .full-hero {
-        background-color: SteelBlue;
-        height: 50vh;
+        background-color: #c7dbfc;
+        background-size: cover;
+        box-sizing: border-box;
+        height: 100vh;
+        padding-top: 10vh;
+      }
+
+      .hero-home {
+        background-image: url(/images/logo2.jpg);
+        background-position: center center;
+        /* x-axis y-axis */
+      }
+
+      .hero-content {
+        color: #fff;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        top: 90%;
+        transform: translate(0, -50%);
+      }
+      .hero-content h1 {
+        color: rgba(219, 155, 136, 0.8);
+        font-size: 5vw;
+        margin-bottom: 0.25em;
+      }
+      .hero-content .social-link {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #557c83;
+      }
+      .hero-content .social-link:hover {
+        background-color: #000;
+        color: #fff;
       }
 
 
