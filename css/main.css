@@ -256,6 +256,29 @@ a img {
 
 
 
+
+      /* Footer Styles */
+
+      .footer {
+        background-color: darkcyan;
+        padding: 10vh 0 15vh;
+        text-align: center;
+      }
+      .footer-logo img {
+        width: 100px;
+      }
+      .footer h3 {
+        color: #fff;
+        padding-top: 1.5em;
+        text-transform: uppercase;
+      }
+      .footer h3 span {
+        color: #aaa;
+      }
+
+
+
+
       /* Throw Away */
       /*
       .test-box {
