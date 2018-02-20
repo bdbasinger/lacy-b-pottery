@@ -287,21 +287,3 @@ a img {
       .bio-copy a {
         color: green;
       }
-
-
-
-
-      /* Throw Away */
-      /*
-      .test-box {
-        background: SteelBlue;
-        margin: 50px;
-      }
-      .test-box-nosizing {
-        border: 10px solid #000;
-        padding: 40px;
-      }
-      .test-box-sizing {
-        box-sizing: border-box;
-      }
-      */
