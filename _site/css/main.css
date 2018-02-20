@@ -57,13 +57,12 @@ a img {
 
 
       /* GLOBAL STYLES */
-
       html {
         /* box-shadow: x-axis y-axis blur size color inset */
-        box-shadow: 0 0 0 30px #DB9B88 inset;
-        padding: 0 30px;
+        /* box-shadow and padding was 30px */
+        box-shadow: 0 0 0 20px #DB9B88 inset;
+        padding: 0 20px;
       }
-
       body {
         font-family: helvetica, arial, sans-serif;
         background-color: #98C2C1;
@@ -72,19 +71,20 @@ a img {
         font-size: 7vw;
         margin-top: 0;
       }
-
+      h2 {
+        /*text-align: center;*/
+        font-size: 2em;
+      }
       a {
         color: red;
       }
-
-      h2 {
-        text-align: center;
+      p {
+        line-height: 1.5;
       }
-
-      /* Sibling selector that targets the p element
+      /* Sibling selector that targets all p elements
       that directly follows the h2 element */
       h2 ~ p {
-        font-size: 0.8em;
+        font-size: 1.4em;
         font-style: italic;
         margin: 1em auto 0;
         max-width: 70%;
@@ -92,11 +92,7 @@ a img {
       }
 
 
-
-
-      /* HEADER STYLES
-      darkcyan and bisque*/
-
+      /* HEADER STYLES */
       .header {
         background-color: #DB9B88;
         color: #fff;
@@ -104,111 +100,80 @@ a img {
         width: 100%;
         z-index: 20;
       }
-
       .header-logo {
         box-sizing: border-box;
         display: block;
         height: 10vh;
-        left: -16px;
+        left: -20px;
+        /* padding-top: 10px: originally */
         padding-top: 16px;
+
         position: relative;
         text-align: center;
         width: 10vh;
       }
-
       /* logo's background color upon hovering */
       .header-logo:hover,
       .header-logo:active {
-        /*background-color: #ed6e2f;*/
+         background-color: #98C2C1;
       }
-
       .header-logo img {
         width: 5vh;
       }
-
       .header-nav {
         float: right;
-        padding: 3.5vh 50px 0 0;
+        /* Changed padding from 60 to 40 */
+        padding: 5.5vh 40px 0 0;
       }
-
       .header-nav > li {
         display: inline-block;
         margin-left: 1em;
       }
-
       /* divider lines in navigation bar */
       .header-nav > li ~ li {
         border-left: 1px solid rgba(255, 255, 255, 0.3);
         padding-left: 1em;
       }
-
       .header-nav a {
         color: #fff;
       }
-
       .nav-links a {
         font-size: 0.8rem;
         font-weight: bold;
         text-decoration: none;
         text-transform: uppercase;
       }
-
       /* Navigation link's background upon hovering */
       .nav-links a:hover,
       .nav-links a:active {
-        color: #cc9900;
+        color: #98C2C1;
       }
 
 
-
-
-
-
       /* Footer Styles */
-
       .footer {
         background-color: #DB9B88 ;
         padding: 10vh 0 15vh;
         text-align: center;
       }
-
       .footer-logo img {
         width: 100px;
       }
-
       .footer h3 {
         color: #fff;
         padding-top: 1.5em;
         text-transform: uppercase;
       }
-
       .footer h3 span {
         color: #aaa;
       }
-
       .footer-nav li {
         display: inline-block;
         margin: 2em 1em 0;
       }
-
       .footer-nav a {
         color: #ccc;
       }
-
-
-
-      /* Deleted
-      Uses Child selector to target only li's that
-      are direct children of the .header-nav class
-
-      .header-nav > li:first-child a {
-        color: #ed6e2f;
-      }
-      .header-nav > li:first-child a:hover {
-        color: #fff;
-      }
-      */
-
 
 
 
@@ -221,22 +186,33 @@ a img {
         padding-top: 10vh;
       }
 
+      .full-hero:after {
+        bottom: 2vh;
+        border: 14px solid;
+        border-color: #fff transparent transparent;
+        content: "";
+        height: 0;
+        left: 50%;
+        position: absolute;
+        transform: translate(-50%, 0);
+        width: 0;
+      }
       .hero-home {
-        background-image: url(/images/logo2.jpg);
+        background-image: url(/images/best_logo.jpg);
         background-position: center center;
         /* x-axis y-axis */
       }
-
       .hero-content {
         color: #fff;
         position: relative;
         text-align: center;
         text-transform: uppercase;
-        top: 90%;
+        top: 50%;
         transform: translate(0, -50%);
       }
       .hero-content h1 {
-        color: rgba(219, 155, 136, 0.8);
+        /*color: rgba(219, 155, 136, 0.8);*/
+        color: rgba(255, 255, 255, 0.8);
         font-size: 5vw;
         margin-bottom: 0.25em;
       }
@@ -250,7 +226,7 @@ a img {
       }
 
 
-
+      
       /* SOCIAL STYLES */
       .social-link {
         background: rgba(150, 150, 150, 0.5);
@@ -258,7 +234,7 @@ a img {
         box-sizing: border-box;
         color: #fff;
         display: inline-block;
-        font-family: helvetica, arial, sans;
+        font-family: helvetica, arial, sans-serif;
         font-size: 1rem;
         font-weight: bold;
         height: 2.5em;
@@ -269,7 +245,6 @@ a img {
         vertical-align: middle;
         width: 2.5em;
       }
-
       .social-list {
         list-style: none;
         padding: 0;
@@ -281,6 +256,42 @@ a img {
       }
 
 
+      /* HOMEPAGE STYLES */
+      .home-section {
+        margin: 6rem auto;
+        max-width: 980px;
+        width: 90vw;
+      }
+      /* How it's made title */
+      .home-section h2 {
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      /* About Us Section */
+      .home-callout {
+        background-color: #DB9B88;
+        color: #fff;
+        padding: 7vh 0;
+      }
+      /* The About Us Title */
+      .callout-title {
+        font-size: 4vw;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      /* The About Us Paragraphs */
+      .callout-copy {
+        font-size: 1em;
+        font-style: italic;
+        margin: 1em auto 0;
+        max-width: 70%;
+        text-align: center;
+      }
+
+
+
 
 
       /* BIO STYLES */
@@ -290,37 +301,30 @@ a img {
         max-width: 960px;
         overflow: hidden;
       }
-
       .bio-box {
-        border: 1px solid black;
         box-sizing: border-box;
         float: left;
         font-size: 1rem;
-        margin: 40px 1% 0;
-        /* Top margin of 40px, right and left margin of 1% */
-        padding: 2%;
-        width: 23%;
+        margin: 6rem 0 0;
+        padding: 0 3%;
+        width: 33%;
       }
-
       .bio-box .social-link {
         display: block;
-        margin: 2em 0 1em;
+        margin: 2em auto 1em;
       }
-
       .bio-box h3 {
         color: #fff;
         font-size: 1.5em;
         margin: -40px 0 1em;
         text-align: center;
+        text-transform: uppercase;
       }
-
       .bio-box img {
         width: 100%;
       }
-
       .bio-copy {
-        font-size: 1em;
-        line-height: 1.5;
+        font-size: 0.75em;
       }
       .bio-copy a {
         color: green;
