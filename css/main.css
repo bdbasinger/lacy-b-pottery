@@ -137,6 +137,9 @@ a img {
 
       .header-nav a {
         color: #fff;
+      }
+
+      .nav-links a {
         font-size: 0.8rem;
         font-weight: bold;
         text-decoration: none;
@@ -144,28 +147,61 @@ a img {
       }
 
       /* Navigation link's background upon hovering */
-      .header-nav a:hover,
-      .header-nav a:active {
+      .nav-links a:hover,
+      .nav-links a:active {
         color: #cc9900;
       }
 
-      /* Uses Child selector to target only li's that
+
+
+
+
+
+      /* Footer Styles */
+
+      .footer {
+        background-color: darkcyan;
+        padding: 10vh 0 15vh;
+        text-align: center;
+      }
+
+      .footer-logo img {
+        width: 100px;
+      }
+
+      .footer h3 {
+        color: #fff;
+        padding-top: 1.5em;
+        text-transform: uppercase;
+      }
+
+      .footer h3 span {
+        color: #aaa;
+      }
+
+      .footer-nav li {
+        display: inline-block;
+        margin: 2em 1em 0;
+      }
+
+      .footer-nav a {
+        color: #ccc;
+      }
+
+
+
+      /*
+      Uses Child selector to target only li's that
       are direct children of the .header-nav class
+
       .header-nav > li:first-child a {
         color: #ed6e2f;
       }
-      */
 
-      /*
       .header-nav > li:first-child a:hover {
         color: #fff;
       }
       */
-
-
-
-
-
 
 
 
@@ -174,7 +210,6 @@ a img {
         background-color: SteelBlue;
         height: 50vh;
       }
-
 
 
 
@@ -251,29 +286,6 @@ a img {
       }
       .bio-copy a {
         color: green;
-      }
-
-
-
-
-
-      /* Footer Styles */
-
-      .footer {
-        background-color: darkcyan;
-        padding: 10vh 0 15vh;
-        text-align: center;
-      }
-      .footer-logo img {
-        width: 100px;
-      }
-      .footer h3 {
-        color: #fff;
-        padding-top: 1.5em;
-        text-transform: uppercase;
-      }
-      .footer h3 span {
-        color: #aaa;
       }
 
 
