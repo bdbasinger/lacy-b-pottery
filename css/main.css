@@ -56,6 +56,23 @@ a img {
 */
 
 
+/*
+
+Flex box shorthand notation:
+
+flex: flex-grow flex-shrink flex-basis
+
+Defaults:
+
+flex: 0 1 auto;
+
+flex-grow: 0;
+flex-shrink: 1;
+flex-basis: auto;
+
+*/
+
+
       /* GLOBAL STYLES */
       html {
         /* box-shadow: x-axis y-axis blur size color inset */
@@ -105,7 +122,8 @@ a img {
         excluding the header and footer
         in a separate div in default.html */
       .content-container {
-        flex-grow: 1;
+    /*  flex: grow shrink basis; */
+        flex: 1 1 auto;
         padding-top: 10vh;
         width: 100%;
       }
@@ -298,27 +316,39 @@ a img {
       }
       /* The About Us Title */
       .callout-title {
+        flex: 1;
+    /*  flex: 1 is the same as flex: 1 1 0;
+        flex: 1 sets grow and shrink to 1 and sets basis to 0 */
+
+    /*  Refactored: 
+        flex: 1 1 0;  */
+
+    /*  Refactored:
         flex-grow: 1;
-        flex-basis: 0;
+        flex-shrink: 1;
+        flex-basis: 0;   */
         font-size: 5.75vw;
         text-align: center;
         text-transform: uppercase;
       }
 
       /* The About Us Paragraphs */
+      /* changed shrink from 0 to 1 */
       .callout-copy {
-        flex-shrink: 0;
-        flex-basis: 45em;
+        /* shorthand flex notation: */
+        flex: 0 1 45em;
+        /*flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 45em; */
         font-size: 1em;
         padding: 0 3vw;
+        font-style: bold;
+        text-align: center;
         /*
         font-style: italic;
         margin: 1em auto 0;
         max-width: 70%;
-
         */
-        font-style: bold;
-        text-align: center;
       }
 
 
