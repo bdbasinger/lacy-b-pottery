@@ -80,6 +80,7 @@ a img {
       }
       p {
         line-height: 1.5;
+        margin: 0.75em 0
       }
       /* Sibling selector that targets all p elements
       that directly follows the h2 element */
@@ -89,6 +90,24 @@ a img {
         margin: 1em auto 0;
         max-width: 70%;
         text-align: center;
+      }
+
+      /* First Flex Declaration */
+      /* This is to format the body tag
+      in the default.html file */
+      body {
+        display: flex;
+        flex-direction: column;
+        font-family: helvetica, arial, sans-serif;
+        min-height: 100vh;
+      }
+      /* wraps the entire content of the page
+        excluding the header and footer
+        in a separate div in default.html */
+      .content-container {
+        flex-grow: 1;
+        padding-top: 10vh;
+        width: 100%;
       }
 
 
@@ -182,7 +201,7 @@ a img {
         background-color: #c7dbfc;
         background-size: cover;
         box-sizing: border-box;
-        height: 100vh;
+        height: 90vh;
         padding-top: 10vh;
       }
 
@@ -224,7 +243,7 @@ a img {
         background-color: #000;
         color: #fff;
       }
-      
+
 
 
       /* SOCIAL STYLES */
@@ -270,23 +289,35 @@ a img {
 
       /* About Us Section */
       .home-callout {
+        /* align-items and display flex are new */
+        align-items: center;
         background-color: #DB9B88;
         color: #fff;
+        display: flex;
         padding: 7vh 0;
       }
       /* The About Us Title */
       .callout-title {
-        font-size: 4vw;
+        flex-grow: 1;
+        flex-basis: 0;
+        font-size: 5.75vw;
         text-align: center;
         text-transform: uppercase;
       }
 
       /* The About Us Paragraphs */
       .callout-copy {
+        flex-shrink: 0;
+        flex-basis: 45em;
         font-size: 1em;
+        padding: 0 3vw;
+        /*
         font-style: italic;
         margin: 1em auto 0;
         max-width: 70%;
+
+        */
+        font-style: bold;
         text-align: center;
       }
 
