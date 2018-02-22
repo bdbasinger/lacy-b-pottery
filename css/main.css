@@ -82,7 +82,7 @@ flex-basis: auto;
       }
       body {
         font-family: helvetica, arial, sans-serif;
-        background-color: #98C2C1;
+        /*background-color: #98C2C1;*/
       }
       h1 {
         font-size: 7vw;
@@ -92,9 +92,14 @@ flex-basis: auto;
         /*text-align: center;*/
         font-size: 2em;
       }
-      a {
-        color: red;
+      h4 {
+        color: #999;
+        font-weight: bold;
+        text-transform: uppercase;
       }
+      /*a {
+        color: red;
+      }*/
       p {
         line-height: 1.5;
         margin: 0.75em 0
@@ -102,7 +107,7 @@ flex-basis: auto;
       /* Sibling selector that targets all p elements
       that directly follows the h2 element */
       h2 ~ p {
-        font-size: 1.4em;
+        font-size: 1.2em;
         font-style: italic;
         margin: 1em auto 0;
         max-width: 70%;
@@ -129,13 +134,14 @@ flex-basis: auto;
         flex: 1 1 auto;
         padding-top: 10vh;
         width: 100%;
+        background-color: #98C2C1;
       }
 
 
       /* HEADER STYLES */
       .header {
         background-color: #DB9B88;
-        color: #fff;
+        /*color: #fff;*/
         position: fixed;
         width: 100%;
         z-index: 20;
@@ -247,6 +253,40 @@ flex-basis: auto;
       .col-three .col-aside {
         flex: 0 1 20em;
       }
+      .col-two {
+        display: flex;
+      }
+      .col-two .col-aside {
+        flex: 0 0 20em;
+        order: 1;
+      }
+      .col-two .col-content {
+        flex: 1;
+      }
+
+
+
+      /* PAGE STYLES */
+      .page {
+        margin: 10vh auto 10vh;
+        max-width: 980px;
+        width: 85vw;
+      }
+      .page h1 {
+        font-size: 3em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+        text-align: center;
+        color: #fff;
+      }
+      .page h2 {
+        margin-bottom: 0.5em;
+      }
+      .page h4 {
+        margin-bottom: 1em;
+      }
+
+
 
 
 
@@ -272,7 +312,7 @@ flex-basis: auto;
         opacity: 1;
       }
       .gallery-thumbs .current img {
-        box-shadow: 0 0 0 5px #ed6e2f;
+        box-shadow: 0 0 0 5px #DB9B88;
         opacity: 1;
       }
       .gallery-photo {
@@ -287,6 +327,107 @@ flex-basis: auto;
       .gallery-info h3 {
         margin-bottom: 1em;
       }
+
+
+
+
+      /* BLOG STYLES */
+      .blog-recent {
+        text-align: right;
+      }
+      .blog-title-list {
+        list-style: none;
+        padding: 0;
+      }
+      .blog-title-list li ~ li {
+        margin-top: 1.5em;
+      }
+      .blog-title-list span {
+        color: #999;
+        display: block;
+        font-size: 0.8em;
+        font-style: italic;
+        margin-top: 0.5em;
+      }
+      .blog-posts ~ .blog-posts {
+        border-top: 1px dotted rgba(0, 0, 0, 0.1);
+        margin-top: 4em;
+        padding-top: 4em;
+      }
+      .blog-posts .post-header {
+        font-size: 0.8rem;
+        color: #fff;
+      }
+      .post-header {
+        margin-bottom: 1.5em;
+        color: #fff;
+      }
+      .post-header img,
+      .post-header .social-link {
+        margin-right: 0.5em;
+      }
+      .post-header img {
+        border-radius: 99px;
+        display: inline-block;
+        height: 2.5em;
+        vertical-align: middle;
+      }
+      .posts-image {
+        background-position: center;
+        background-size: cover;
+        height: 6em;
+        margin-bottom: 1.5em;
+      }
+
+
+
+
+      /* BLOG POST SPECIFIC STYLING */
+      .post {
+        width: 100%;
+        background-color: #DB9B88;
+        /*#98C2C1*/
+      }
+      .post-content,
+      .post-footer {
+        margin: auto;
+        max-width: 40em;
+        width: 85vw;
+      }
+      .pull-left {
+        float: left;
+        margin: 2em 2em 2em -2%;
+      }
+      .pull-right {
+        float: right;
+        margin: 2em -2% 2em 2em
+      }
+      .post-aside {
+        background-color: rgba(0, 0, 0, 0.7);
+        float: right;
+        margin: 0 0 2em 2em;
+        padding: 2em;
+      }
+      .post .post-header {
+        margin-bottom: 2.5em;
+        text-align: center;
+      }
+      .post-content {
+        font-size: 1.1rem;
+      }
+      .post-footer {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        font-style: italic;
+        font-size: 0.8em;
+        margin-top: 3em;
+        padding-top: 2em;
+      }
+      .aside-header {
+        color: #fff;
+      }
+
+
+
 
 
 
@@ -341,6 +482,16 @@ flex-basis: auto;
         color: #fff;
       }
 
+      .half-hero {
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 30vh;
+        margin-top: 10vw;
+      }
+
+
+
 
 
       /* SOCIAL STYLES */
@@ -382,6 +533,19 @@ flex-basis: auto;
       .home-section h2 {
         margin-bottom: 1.5rem;
         text-align: center;
+        color: #fff;
+      }
+      .home-section h4 {
+        margin-bottom: 0.5em;
+        text-align: center;
+        color: #fff;
+      }
+      .home-section .post-header {
+        text-align: center;
+      }
+      .home-section .blog-posts {
+        margin: auto;
+        width: 75%;
       }
 
       /* About Us Section */
