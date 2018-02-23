@@ -113,8 +113,8 @@ flex-basis: auto;
       /* Sibling selector that targets all p elements
       that directly follows the h2 element */
       h2 ~ p {
-        font-size: 1.2em;
-        font-style: italic;
+        font-size: 1em;
+        font-style: normal;
         margin: 1em auto 0;
         max-width: 70%;
         text-align: center;
