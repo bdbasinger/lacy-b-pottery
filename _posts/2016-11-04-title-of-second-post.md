@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Title of the post
+title: Post Title
 postHero: /images/best_logo.jpg
 author: LacyBPottery
 authorTwitter: https://www.facebook.com/lacybpottery/

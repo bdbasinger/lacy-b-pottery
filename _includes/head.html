@@ -1,5 +1,14 @@
 <head>
-  <title>LacyBPottery</title>
+  {% if page.title %}
+    <title>{{ page.title }} | LacyBPottery</title>
+  {% else %}
+    <title>LacyBPottery</title>
+  {% endif %}
+  {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+  {% else %}
+    <meta name="description" content="Lacy B's Pottery ware products are oven, microwave and dishwasher safe.">
+  {% endif %}
   <link href="/favicon.ico" rel="icon">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <meta charset="utf-8">

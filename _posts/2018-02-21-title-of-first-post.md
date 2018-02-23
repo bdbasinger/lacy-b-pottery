@@ -1,6 +1,6 @@
 ---
 layout: post
-title: February Giveaway!
+title: February Giveaway
 postHero: /images/best_logo.jpg
 author: LacyBPottery
 authorTwitter: https://www.facebook.com/lacybpottery/
