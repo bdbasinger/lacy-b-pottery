@@ -759,7 +759,7 @@ flex-basis: auto;
             left: auto;
           }
 
-
+          /* MENU ELEMENT FOR MOBILE */
           /* MOBILE MENU */
           .show-mobile-menu {
             display: block;
@@ -767,6 +767,9 @@ flex-basis: auto;
             margin-top: 1.5vh
             padding: 1.5em;
             position: relative;
+            top: 30px;
+            right: 20px;
+
           }
           .header-nav {
             background-color: #444;
@@ -781,6 +784,7 @@ flex-basis: auto;
             transition: all 0.5s ease-in-out;
             width: 100vw;
             z-index: 9;
+
           }
           .header-nav li {
             display: block;
