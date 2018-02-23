@@ -767,10 +767,11 @@ flex-basis: auto;
             margin-top: 1.5vh
             padding: 1.5em;
             position: relative;
-            top: 30px;
-            right: 20px;
-
+            /* POSITION OF "MENU" BUTTON */
+            top: 2em;
+            right: 3em;
           }
+          
           .header-nav {
             background-color: #444;
             box-sizing: border-box;
@@ -812,8 +813,9 @@ flex-basis: auto;
             max-height: 1000px;
           }
           .mobile-menu-check:checked ~ .show-mobile-menu:after {
-            background-color: #000;
-            color: #ed6e2f;
+            /*background-color: #98C2C1;*/
+            /* COLOR OF BACKGROUND */
+            color: #fff;
             content: "CLOSE";
             left: 0;
             position: absolute;
