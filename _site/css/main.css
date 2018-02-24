@@ -103,9 +103,10 @@ flex-basis: auto;
         font-weight: bold;
         text-transform: uppercase;
       }
-      /*a {
-        color: red;
-      }*/
+      a {
+        color: #DB9B88;
+        font-weight: bold;
+      }
       p {
         line-height: 1.5;
         margin: 0.75em 0
