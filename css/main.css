@@ -87,7 +87,7 @@ flex-basis: auto;
         flex-direction: column;
         min-height: 100vh;
       }
-      h1,h2,h3,h4,h5,h6{
+      h1,h2,h3,h4,h5,h6 {
         font-family: 'Raleway', helvetica, sans-serif;
       }
       h1 {
@@ -336,6 +336,13 @@ flex-basis: auto;
 
 
 
+
+
+
+
+
+
+      /* PHOTOS PAGE */
       .photo-gallery {
         margin-top: 10vh;
         padding: .5vw;
@@ -358,6 +365,7 @@ flex-basis: auto;
       .photo img {
         width: 100%;
         height: auto;
+        /* image-orientation: from-image; */
       }
 
 
