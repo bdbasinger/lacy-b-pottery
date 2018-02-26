@@ -136,7 +136,6 @@ flex-basis: auto;
       .content-container {
     /*  flexbox inside a flexbox */
         display: flex;
-    /*    flex-direction: column; */
     /*  flex: grow shrink basis; */
         flex: 1 1 auto;
         padding-top: 10vh;
@@ -329,11 +328,76 @@ flex-basis: auto;
       .footer-nav a {
         color: #ccc;
       }
-
       /* Social links inside footer */
       .footer-social {
         margin-top: 2em;
       }
+
+
+
+
+      .photo-gallery {
+        margin-top: 10vh;
+        padding: .5vw;
+        font-size: 0;
+        display: -ms-flexbox;
+        -ms-flex-wrap: wrap;
+        -ms-flex-direction: column;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        display: -webkit-box;
+        display: flex;
+      }
+      .photo {
+        -webkit-box-flex: auto;
+        -ms-flex: auto;
+        flex: auto;
+        width: 200px;
+        margin: .5vw;
+      }
+      .photo img {
+        width: 100%;
+        height: auto;
+      }
+
+
+
+
+      /* CONTACT STYLES
+      .contact-us {
+        padding-top: 10vh;
+      }
+      .contact-us h2 {
+        text-align: center;
+        margin-bottom: 2vh;
+      }
+      .contact-container {
+        display: flex;
+        flex: 1 1 auto;
+        min-height: 100vh;
+        width: 100%;
+      }
+      .col-1 {
+        padding: 0 5em;
+        text-align: center;
+      }
+      .col-2 {
+        padding: 0 5em;
+        text-align: center;
+      }
+      .col-3 {
+        padding: 0 5em;
+        text-align: center;
+      }
+      */
+
+
+
+
+
+
+
+
 
 
 
@@ -346,26 +410,19 @@ flex-basis: auto;
         display: flex;
         flex: 1;
       }
-
       .col {
         box-sizing: border-box;
         padding: 2em;
       }
-
-  /*  targets all col elements that are contained
-      within the same parent element */
       .col-three .col ~ .col {
         border-left: 1px solid rgba(0, 0, 0, 0.1);
       }
-
       .col-three .col-nav {
         flex: 0 1 15em;
       }
-
       .col-three .col-content {
         flex: 1 1 0;
       }
-
       .col-three .col-aside {
         flex: 0 1 20em;
       }
@@ -443,8 +500,6 @@ flex-basis: auto;
       .gallery-info h3 {
         margin-bottom: 1em;
       }
-
-
 
 
       /* BLOG STYLES */
