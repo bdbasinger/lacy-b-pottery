@@ -8,6 +8,7 @@ gravatar: https://www.gravatar.com/avatar/30a06b9c13fb78a79dc0e43cedee0dbf?s=80
 postFooter: <a href="https://www.facebook.com/lacybpottery/">Facebook Page</a>
 ---
 
+
 Hi everyone! I have decided to create a Lacybpottery group because I think it will make our posts accessible to a larger audience.
 
 
