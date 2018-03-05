@@ -1,7 +1,7 @@
 ---
 layout: post
 title: February Giveaway
-postHero: /images/best_logo.jpg
+postHero: /images/stand3.jpg
 author: LacyBPottery
 authorTwitter: https://www.facebook.com/lacybpottery/
 gravatar: https://www.gravatar.com/avatar/30a06b9c13fb78a79dc0e43cedee0dbf?s=80
@@ -10,7 +10,7 @@ postFooter: <a href="https://www.facebook.com/lacybpottery/">Facebook Page</a>
 
 Only one more week left to participate in February’s GIVEAWAY!
 
-<img class="pull-left" src="http://placekitten.com/g/400/200"
+<img class="pull-left" src="/images/blogpics/giveaway.jpg"
      alt="kitten">
 
 
