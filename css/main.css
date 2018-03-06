@@ -825,7 +825,7 @@ flex-basis: auto;
         color: #fff;
         font-size: 1.5em;
         /*margin: -40px 0 1em;*/
-        margin: -50px 0 1em;
+        margin: -40px 0 1em;
         text-align: center;
         text-transform: uppercase;
       }
@@ -982,9 +982,20 @@ flex-basis: auto;
               flex: 1;
             }
 
-.posts-image {
-  display: none;
-}
+            /* BLOG POST STAND SIGN */
+            .posts-image {
+              display: none;
+            }
+
+            .bio-box h3 {
+              color: #fff;
+              font-size: 1.5em;
+              /*margin: -40px 0 1em;*/
+              margin: -70px 0 1em;
+              text-align: center;
+              text-transform: uppercase;
+
+            }
 
 
 
