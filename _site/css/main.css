@@ -108,10 +108,16 @@ flex-basis: auto;
         color: #DB9B88;
         font-weight: bold;
       }
+
       p {
         line-height: 1.5;
-        margin: 0.75em 0
+        margin: 0.75em 0;
       }
+
+
+
+
+
       /* Sibling selector that targets all p elements
       that directly follows the h2 element */
       h2 ~ p {
@@ -570,6 +576,12 @@ flex-basis: auto;
         margin-bottom: 1.5em;
       }
 
+      /* Targets all p elements that directly
+         follow the posts-image element */
+      .posts-image ~ p {
+        text-align: center;
+      }
+
 
 
 
@@ -827,6 +839,13 @@ flex-basis: auto;
       }
 
 
+
+
+
+
+
+
+
       @media (max-width: 800px) {
         html {
           box-shadow: none;
@@ -962,7 +981,9 @@ flex-basis: auto;
               flex: 1;
             }
 
-
+.posts-image {
+  display: none;
+}
 
 
 
