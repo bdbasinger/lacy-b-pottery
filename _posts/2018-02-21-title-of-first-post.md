@@ -1,7 +1,7 @@
 ---
 layout: post
 title: February Giveaway
-postHero: /images/stand3.jpg
+postHero: /images/stand7.jpg
 author: LacyBPottery
 authorTwitter: https://www.facebook.com/lacybpottery/
 gravatar: https://www.gravatar.com/avatar/30a06b9c13fb78a79dc0e43cedee0dbf?s=80
