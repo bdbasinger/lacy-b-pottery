@@ -834,10 +834,12 @@ flex-basis: auto;
       }
       .bio-copy {
         font-size: 0.75em;
+        text-align: center;
       }
       .bio-copy a {
         color: green;
       }
+
 
 
 
