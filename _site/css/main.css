@@ -726,6 +726,23 @@ flex-basis: auto;
         margin: 0 0.5em;
       }
 
+      .contact-info {
+        list-style: none;
+        margin-top: 3%;
+        padding: 0;
+        text-align: center;
+      }
+
+      .contact-info > li {
+        display: block;
+        margin: 0 0.5em;
+        padding-top: 1em;
+      }
+
+      .contact-info a {
+        color: black;
+      }
+
 
       /* HOMEPAGE STYLES */
       .home-section {
