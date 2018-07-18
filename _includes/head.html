@@ -10,6 +10,22 @@
 </script>
 
 
+
+<!-- Added this script for Gallery page -->
+<script src="/js/gallery.js"></script>
+
+
+
+<!-- Event listener that calls the activateGallery()
+     function after the DOMContentLoaded is complete -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      activateGallery();
+    });
+  </script>
+
+
   {% if page.title %}
     <title>{{ page.title }} | LacyBPottery</title>
   {% else %}

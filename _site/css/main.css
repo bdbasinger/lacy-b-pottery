@@ -105,7 +105,7 @@ flex-basis: auto;
         text-transform: uppercase;
       }
       a {
-        color: #DB9B88;
+        color: #fff;
         font-weight: bold;
       }
 
@@ -516,6 +516,8 @@ flex-basis: auto;
       .gallery-photo {
         position: relative;
       }
+
+      /* For the Center Photo image on gallery page */
       .gallery-photo img {
         width: 100%;
       }
