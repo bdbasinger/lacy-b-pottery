@@ -670,7 +670,8 @@ flex-basis: auto;
         width: 0;
       }
       .hero-home {
-        background-image: url(/images/best_logo.jpg);
+        background-image: url(/images/storeFrontSign.jpg);
+        /* background-image: url(/images/best_logo.jpg); */
         background-position: center center;
         /* x-axis y-axis */
       }
