@@ -790,6 +790,7 @@ flex-basis: auto;
         color: #fff;
         display: flex;
         padding: 7vh 0;
+        margin-top: 4vh;
       }
       /* The About Us Title */
       .callout-title {
