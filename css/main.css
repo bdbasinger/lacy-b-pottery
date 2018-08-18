@@ -672,13 +672,15 @@ flex-basis: auto;
       }
 
       .hero-home {
-        background-image: url(/images/coverphotos/cover1.JPG);
 
+        background-image: url(/images/coverphotos/coverphotovivid.jpg);
+
+        /* background-image: url(/images/coverphotos/cover1.JPG); */
         /* background-image: url(/images/storeFrontSign.jpg); */
         /* background-image: url(/images/best_logo.jpg); */
         background-position: center center;
         /* x-axis y-axis */
-        
+
       }
       .hero-content {
         color: #fff;
