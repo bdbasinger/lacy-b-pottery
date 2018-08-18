@@ -58,6 +58,7 @@ a img {
 
 
 
+
 /*
 
 Flex box shorthand notation:
@@ -669,11 +670,15 @@ flex-basis: auto;
         transform: translate(-50%, 0);
         width: 0;
       }
+
       .hero-home {
-        background-image: url(/images/storeFrontSign.jpg);
+        background-image: url(/images/coverphotos/cover1.JPG);
+
+        /* background-image: url(/images/storeFrontSign.jpg); */
         /* background-image: url(/images/best_logo.jpg); */
         background-position: center center;
         /* x-axis y-axis */
+        
       }
       .hero-content {
         color: #fff;
